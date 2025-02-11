@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Authentication App
 
-## Getting Started
+This is a simple web application that includes multiple forms - registration and login. Users can sign up, log in, and log out of their accounts. All forms include input field validation to ensure data accuracy.
 
-First, run the development server:
+## Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The following technologies are used in this project:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [NextJS](https://nextjs.org/): A React framework that enables server-side rendering, static site generation, and hybrid rendering for building fast, scalable web applications.
+- [TypeScript](https://www.typescriptlang.org/): A refined version of JavaScript that integrates type annotations into the language.
+- [TailwindCSS](https://tailwindcss.com/): A utility-first CSS framework that provides low-level utility classes to build custom designs without having to write custom CSS.
+- [Shadcn](https://ui.shadcn.com/): A collection of accessible and customizable UI components built with Radix and Tailwind CSS.
+- [React Hook Form](https://www.react-hook-form.com/): A performant and flexible library for managing form state and validation in React applications.
+- [Zod](https://zod.dev/): A TypeScript-first schema validation library for parsing and validating data with a concise API.
+- [TanStack Query](https://tanstack.com/query/latest): A powerful data-fetching and state management library for React, enabling efficient server-state synchronization.
+- [Axios](https://axios-http.com/docs/intro): A promise-based HTTP client for making requests in both browser and Node.js environments.
+- [JavaScript Cookie](https://www.npmjs.com/package/js-cookie): A simple JavaScript library for handling cookies with an intuitive API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/dyarechuk/AuthApp
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. Run the application:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Open your browser and go to [http://localhost:3000/](http://localhost:3000/).
+
+3. Register account, log in to it and watch information about you.
+
+## Author
+
+This project was created by [Dmytro Yarechuk](https://github.com/Dyarechuk).

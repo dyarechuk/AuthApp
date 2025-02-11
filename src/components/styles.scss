@@ -1,0 +1,62 @@
+.password-requirements {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.password-requirement {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	color: #e3e3fabf;
+	font-size: 16px;
+	line-height: 140%;
+
+	.requirement-indicator {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: rgba(246, 122, 124, 0.75);
+	}
+
+	&.met {
+		.requirement-indicator {
+			background: rgba(101, 216, 62, 0.75);
+		}
+	}
+}
+
+.password-strength-indicator {
+	display: flex;
+	gap: 4px;
+	width: 100%;
+
+	&-segment {
+		height: 3px;
+		flex: 1;
+		background: #e3e3fa26;
+		transition: background-color 0.3s ease;
+
+		&.active {
+			&.weak {
+				background: rgba(246, 122, 124, 0.75);
+			}
+
+			&.medium {
+				background: rgba(255, 210, 79, 0.75);
+			}
+
+			&.strong {
+				background: rgba(101, 216, 62, 0.75);
+			}
+		}
+
+		&:first-child {
+			border-radius: 4px 0px 0px 4px;
+		}
+
+		&:last-child {
+			border-radius: 0px 4px 4px 0px;
+		}
+	}
+}
