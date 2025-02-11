@@ -1,7 +1,8 @@
-import { AxiosError } from 'axios';
-import { User } from '../dto';
-import { instance } from './axios.instance';
 import Cookies from 'js-cookie';
+import { AxiosError } from 'axios';
+
+import { instance } from './axios.instance';
+import { User } from '../dto';
 
 interface APIErrorResponse {
 	message?: string;

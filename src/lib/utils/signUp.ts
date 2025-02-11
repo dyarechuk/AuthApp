@@ -1,6 +1,7 @@
 import { AxiosError } from 'axios';
-import { User } from '../dto';
+
 import { instance } from './axios.instance';
+import { User } from '../dto';
 
 interface APIErrorResponse {
 	message?: string;

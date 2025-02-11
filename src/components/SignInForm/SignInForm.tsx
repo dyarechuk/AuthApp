@@ -1,26 +1,33 @@
 'use client';
 
-import { FormProvider, useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
 import { useCallback, useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+
+import { useForm, FormProvider } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { useMutation } from '@tanstack/react-query';
+
 import ViewIcon from '../../../public/assets/icons/eye.svg';
 import NotAllowedIcon from '../../../public/assets/icons/eye-off.svg';
+
 import { User } from '@/lib/dto';
-import { useRouter } from 'next/navigation';
 import { signIn } from '@/lib/utils/signIn';
-import Link from 'next/link';
-import { Button, FormLabel, Input } from '../ui';
+import { toastError } from '@/lib/toastError';
+import { toastSuccess } from '@/lib/toastSuccess';
+
 import {
 	getMetRequirementsCount,
 	PasswordRequirement,
 	getStrengthLevel,
 	getPasswordRequirements,
 } from '../utils/getPasswordRequirements';
-import '../styles.scss';
-import { toastError } from '@/lib/toastError';
-import { toastSuccess } from '@/lib/toastSuccess';
+
 import { formSchema, FormValues } from '../utils/validationSchema';
+
+import { Button, FormLabel, Input } from '../ui';
+
+import '../styles.scss';
 
 export const SignInForm: React.FC = () => {
 	const [isShowPassword, setIsShowPassword] = useState(false);
